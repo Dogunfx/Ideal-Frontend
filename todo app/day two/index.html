@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>My Todo APP</title>
+  </head>
+  <body class="main-body">
+    <main>
+      <div class="wrapper">
+        <button
+          onclick="toggleDialog()"
+          class="mybutton open-modal animate__animated animate__headShake animate__infinite"
+        >
+          Start My Todo
+        </button>
+      </div>
+    </main>
+    <div class="dialog-bg" id="dialog-bg">
+      <div class="dialog animate__animated animate__zoomIn">
+        <div class="dialog-body">
+          <div class="dialog-header">
+            <div class="row">
+              <div class="col-6">
+                <h4 class="dialog-title">Identify User</h4>
+              </div>
+              <div class="col-3">
+                <button onclick="toggleDialog()" class="myicon">X</button>
+              </div>
+            </div>
+          </div>
+          <div class="dialog-content">
+            <p>Enter Your Credentials Below</p>
+            <form action="list.html">
+              <div class="form-row">
+                <input
+                  type="text"
+                  placeholder="enter username"
+                  required
+                  name="username"
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  name="userpassword"
+                  type="password"
+                  id=""
+                  placeholder="enter password"
+                  required
+                />
+              </div>
+              <div class="form-row form-submit">
+                <input type="submit" value="Continue" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
