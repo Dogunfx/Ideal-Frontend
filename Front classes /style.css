@@ -1,0 +1,117 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+/* reusability */
+.in-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.flex-display {
+    display: flex;
+    align-items: center
+}
+
+
+
+header .brand {
+    flex: 1;
+    text-align: center;
+
+}
+
+header nav {
+    flex: 3;
+}
+
+header {
+    /* background-color: red; */
+    box-shadow: 1px 1px 10px grey;
+}
+
+header img {
+    width: 80px;
+}
+
+header nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    color: #167fba;
+    padding: 10px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    transition: all 0.2s;
+    /* background-color: red; */
+
+}
+
+header nav ul li a:hover {
+    border-bottom: 4px solid #167fba;
+
+}
+
+.banner {
+    background-image: url("bg.jpg");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 10px; */
+}
+
+.banner .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+}
+
+.banner {}
+
+.content {
+    /* background-color: red; */
+    /* display: flex; */
+}
+
+.content .text {
+    padding-top: 200px;
+    padding-left: 40px;
+    color: white;
+    line-height: 1.4;
+    ;
+}
+
+.banner .title {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 80px;
+}
+
+.banner a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #167fba;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
