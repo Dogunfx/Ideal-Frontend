@@ -65,6 +65,7 @@ main {
     cursor: pointer;
 }
 
+
 /* .wrapper .mybutton:hover {
     transform: scale(1.12);
 } */
@@ -143,7 +144,14 @@ main {
 .dialog-content p {
     text-align: center;
     font-size: 20px;
-    padding: 25px 12px;
+    padding: 20px 12px;
+}
+
+.dialog-content .error {
+    padding: 4px;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
 }
 
 .dialog-content .form-row {
@@ -171,13 +179,19 @@ main {
     margin: auto;
 }
 
-.dialog-content .form-row input[type='submit'] {
+.dialog-content .form-row input[type='submit'],
+.primary-button {
     padding: 8px 14px;
     display: inline-block;
     background-color: indigo;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
     color: white;
     font-weight: bold;
 }
+
+.primary-button {}
 
 /* designs for dialog ends here */
 

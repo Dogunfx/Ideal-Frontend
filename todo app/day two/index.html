@@ -41,12 +41,14 @@
           </div>
           <div class="dialog-content">
             <p>Enter Your Credentials Below</p>
-            <form action="list.html">
+            <p class="error" id="msg"></p>
+            <form action="list.html" id="login_form">
               <div class="form-row">
                 <input
                   type="text"
                   placeholder="enter username"
                   required
+                  id="username"
                   name="username"
                 />
               </div>
@@ -54,7 +56,7 @@
                 <input
                   name="userpassword"
                   type="password"
-                  id=""
+                  id="userpassword"
                   placeholder="enter password"
                   required
                 />
@@ -67,6 +69,7 @@
         </div>
       </div>
     </div>
+    <script src="js/db.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

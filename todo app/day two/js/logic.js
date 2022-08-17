@@ -6,4 +6,3 @@ let username = params.get("username");
 let password = params.get("userpassword");
 
 auth_name.innerHTML = username;
-// output.innerHTML += "  --------- " + params;
