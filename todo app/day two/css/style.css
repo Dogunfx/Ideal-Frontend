@@ -154,6 +154,13 @@ main {
     font-style: italic;
 }
 
+.dialog-content .success {
+    padding: 4px;
+    color: green;
+    font-size: 12px;
+    font-style: italic;
+}
+
 .dialog-content .form-row {
     padding: 10px;
 }
