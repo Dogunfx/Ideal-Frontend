@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/list.css" />
+  </head>
+  <body>
+    <div class="floating-button">
+      <button>
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="main-div">
+      <h1>
+        Welcome <span id="auth_name"> </span>
+        <a class="btn-sm" href="./index.html">Logout</a>
+      </h1>
+
+      <hr />
+
+      <div class="row">
+        <div class="left">
+          <p class="title">list of todo</p>
+          <ul class="list">
+            <li>
+              <div class="list-head">
+                <div class="list_left">
+                  <p class="heading">Read About Reactjs</p>
+                  <p class="sub-heading">2nd December 2022</p>
+                </div>
+                <div class="list_right">
+                  <button>
+                    <i class="fa fa-pencil"></i>
+                  </button>
+                  <button>
+                    <i class="fa fa-check"></i>
+                  </button>
+                  <button>
+                    <i class="fa fa-trash"></i>
+                  </button>
+                  <button>
+                    <i class="fa fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="list-desc hide">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab
+                  amet totam tempora. Excepturi, neque culpa? Animi, molestiae
+                  sit fuga esse quisquam laudantium eaque neque iure debitis
+                  reprehenderit, distinctio quos.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="list-head">
+                <div class="list_left">
+                  <p class="heading">Read About Reactjs</p>
+                  <p class="sub-heading">2nd December 2022</p>
+                </div>
+                <div class="list_right">
+                  <button>
+                    <i class="fa fa-pencil"></i>
+                  </button>
+                  <button>
+                    <i class="fa fa-check"></i>
+                  </button>
+                  <button>
+                    <i class="fa fa-trash"></i>
+                  </button>
+                  <button>
+                    <i class="fa fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="list-desc hide">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab
+                  amet totam tempora. Excepturi, neque culpa? Animi, molestiae
+                  sit fuga esse quisquam laudantium eaque neque iure debitis
+                  reprehenderit, distinctio quos.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right">
+          <p class="title">list of completed</p>
+        </div>
+      </div>
+    </div>
+    <script src="./js/db.js"></script>
+    <script src="./js/logic.js"></script>
+  </body>
+</html>
