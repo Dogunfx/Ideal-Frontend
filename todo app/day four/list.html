@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/list.css" />
+  </head>
+  <body>
+    <div class="dialog-bg" id="edit-dialog-bg">
+      <div class="dialog animate__animated animate__zoomIn">
+        <div class="dialog-body">
+          <div class="dialog-header">
+            <div class="row">
+              <div class="col-6">
+                <h4 class="dialog-title">Edit Task</h4>
+              </div>
+              <div class="col-3">
+                <button onclick="toggleEditDialog()" class="myicon">X</button>
+              </div>
+            </div>
+          </div>
+          <div class="dialog-content">
+            <p>Fill the form below to Edit task</p>
+            <form action="list.html" id="edit_task_form">
+              <div class="form-row">
+                <input
+                  type="text"
+                  placeholder="Enter Title"
+                  required
+                  id="edit_task_title"
+                />
+                <input type="hidden" readonly id="current_task_id" />
+              </div>
+              <div class="form-row">
+                <input
+                  class="form-control"
+                  type="date"
+                  placeholder="Date for Task"
+                  required
+                  id="edit_task_date"
+                />
+              </div>
+              <div class="form-row">
+                <textarea
+                  id="edit_task_desc"
+                  class="form-control"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter Description"
+                ></textarea>
+              </div>
+              <div class="form-row form-submit">
+                <input type="submit" value="Edit Task" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dialog-bg" id="dialog-bg">
+      <div class="dialog animate__animated animate__zoomIn">
+        <div class="dialog-body">
+          <div class="dialog-header">
+            <div class="row">
+              <div class="col-6">
+                <h4 class="dialog-title">New Task</h4>
+              </div>
+              <div class="col-3">
+                <button onclick="toggleDialog()" class="myicon">X</button>
+              </div>
+            </div>
+          </div>
+          <div class="dialog-content">
+            <p>Fill the form below to create a task</p>
+            <form action="list.html" id="new_task_form">
+              <div class="form-row">
+                <input
+                  type="text"
+                  placeholder="Enter Title"
+                  required
+                  id="task_title"
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  class="form-control"
+                  type="date"
+                  placeholder="Date for Task"
+                  required
+                  id="task_date"
+                />
+              </div>
+              <div class="form-row">
+                <textarea
+                  id="task_desc"
+                  class="form-control"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter Description"
+                ></textarea>
+              </div>
+              <div class="form-row form-submit">
+                <input type="submit" value="Add Task" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-button">
+      <button class="open-modal" onclick="toggleDialog()">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="main-div">
+      <h1>
+        Welcome <span id="auth_name"> </span>
+        <a class="btn-sm" href="./index.html">Logout</a>
+      </h1>
+
+      <hr />
+
+      <div class="row">
+        <div class="left">
+          <p class="title">list of todo</p>
+          <ul class="list" id="un-completed-todo"></ul>
+        </div>
+        <div class="right">
+          <p class="title">list of completed</p>
+          <ul class="list" id="completed-todo"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/db.js"></script>
+    <script src="./js/logic.js"></script>
+    <script src="./js/loadtodo.js"></script>
+
+    <script>
+      // localStorage.setItem("todos", null);
+      // console.log(todos);
+    </script>
+  </body>
+</html>
