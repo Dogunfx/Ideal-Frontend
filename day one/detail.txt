@@ -1,0 +1,6 @@
+git commit -m 'Have been able to complete the HTML outline'
+
+git config --global user.email 'dogunfx@gmail.com'
+
+git config --global user.name 'Dogunfx'
+
